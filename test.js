@@ -1,4 +1,6 @@
-hello world
-hello world at 1:19
-hello world at 1:44
-hello world at 1:47
+var http = require('http');
+
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello World!');
+}).listen(8080);
